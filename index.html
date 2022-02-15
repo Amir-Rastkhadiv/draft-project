@@ -70,223 +70,202 @@
 </head>
 
 <body>
-    <!-- The header is going to be the same across each page-->
-    <header>
-        <!-- Header/navbars go here -->
-        <nav class="navbar nav-menu navbar-light navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand logo-style" id="logo-hover" href="index.html">
-                    <span id="logo-grey"> Fun</span>Gym <span id="logo-green"></span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon menu-hover"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto text-center" id="menu-hover">
-                        <li class="nav-item mr-2">
-                            <a class="nav-link menu-item" href="about.html">Home<span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item mr-2">
-                            <a class="nav-link menu-item" href="classes.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item mr-2">
-                            <a class="nav-link menu-item" href="gym.html">Loigin</a>
-                        </li>
-                        <li class="nav-item mr-2">
-                            <a class="nav-link menu-item" href="contact.html">Menue</a>
-                        </li>
-                        <li>
-                            <button class="btn btn-success home-buttons nav-button"
-                                onclick="window.location.href='https://athajuong.github.io/milestone-project-1/contact.html'"
-                                type="submit">
-                                Join Now! <i class="fas fa-user-plus"></i>
-                            </button>
-                        </li>
-                    </ul>
+    <!-- Header/navbars go here --> 
+    <nav class="navbar nav-menu navbar-light navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo-style" id="logo-hover" href="index.html">
+            <span id="logo-grey">Tight</span><span id="logo-green">Core Gym</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon menu-hover"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-center" id="menu-hover">
+                    <li class="nav-item mr-2">
+                        <a class="nav-link menu-item" href="about.html">About Us<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link menu-item" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link menu-item" href="gym.html">Gym</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link menu-item" href="contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <button class="btn btn-success home-buttons nav-button" onclick="window.location.href='https://athajuong.github.io/milestone-project-1/contact.html'" type="submit">
+                        Join Now! <i class="fas fa-user-plus"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ===== Main section of the page ====== -->
+    <section class="container-fluid" id="hero-outer">
+        <!-- Add hero image for home page-->
+        <div id="hero-image">
+            <div class="overlay">
+                <div class="cover-text" id="hero">
+                    <h1>
+                        Join Now
+                    </h1>
+                    <h3>
+                        Get ready for the summer with our expert trainers and nutritionists!
+                    </h3>
+                    <button class="btn btn-success home-buttons nav-button" onclick="window.location.href='https://athajuong.github.io/milestone-project-1/contact.html'" type="submit">Book a session!</button>
+                    <!-- These stars are positioned center on small and above screens-->
+                    <div class="d-none d-sm-block" id="stars-small">
+                        <span class="trustpilot-stars"></span>
+                        <span class="trustpilot-stars"></span>
+                        <span class="trustpilot-stars"></span>
+                        <span class="trustpilot-stars"></span>
+                    </div>
+                </div>
+                <!-- these stars are positioned in the bottom corner on mobile-->
+                <div class="d-block d-sm-none review-stars">
+                    <span class="trustpilot-stars"></span>
+                    <span class="trustpilot-stars"></span>
+                    <span class="trustpilot-stars"></span>
+                    <span class="trustpilot-stars"></span>
                 </div>
             </div>
-        </nav>
-        <!-- ===== Main section of the page ====== -->
-        <section class="container-fluid" id="hero-outer">
-            <!-- Add hero image for home page-->
-            <div id="hero-image">
+        </div>
+    </section>
+    <!--Main content section of the page-->
+    <section class="services container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Tailored fitness programs that match your fitness goals</h3>
+                <hr class="content-divider">
+                <div class="row">
+                    <div class="col-12 col-xl-4 general-content">
+                        <i class="fas fa-user-friends"></i>
+                        <p>Benefit from the training and experiences from our knowledgeable trainers and nutritionists.</p>
+                        <a href="about.html">
+                        see more...
+                        </a>
+                    </div>
+                    <div class="col-12 col-xl-4 general-content">
+                        <i class="fas fa-users"></i>
+                        <p>Join classes and exercise with other gym members. Enjoy the healthy atmosphere at TightCore.</p>
+                        <a href="classes.html">
+                        see more...
+                        </a>
+                    </div>
+                    <div class="col-12 col-xl-4 general-content">
+                        <i class="fas fa-dumbbell"></i>
+                        <p>Our gym is modern and stocked with equipment for cardio, HIIT, training, weightlifting, and relaxation.</p>
+                        <a href="gym.html">
+                        see more...
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Image section: 2 images side-by-side on desktop-->
+    <section class="container-fluid facilities-outer">
+        <div class="row">
+            <div class="col-12 col-xl-6" id="half-width-image-left">
                 <div class="overlay">
-                    <div class="cover-text" id="hero">
+                    <div class="cover-text facilities">
                         <h1>
-                            Join Now
+                            Gym Facilities
                         </h1>
                         <h3>
-                            Get ready for the summer with our expert trainers and nutritionists!
+                            Whether you are trying to build muscle or trying to improve your endurance, 
+                            take advantage of our:
                         </h3>
-                        <button class="btn btn-success home-buttons nav-button"
-                            onclick="window.location.href='https://athajuong.github.io/milestone-project-1/contact.html'"
-                            type="submit">Book a session!</button>
-                        <!-- These stars are positioned center on small and above screens-->
-                        <div class="d-none d-sm-block" id="stars-small">
-                            <span class="trustpilot-stars"></span>
-                            <span class="trustpilot-stars"></span>
-                            <span class="trustpilot-stars"></span>
-                            <span class="trustpilot-stars"></span>
-                        </div>
-                    </div>
-                    <!-- these stars are positioned in the bottom corner on mobile-->
-                    <div class="d-block d-sm-none review-stars">
-                        <span class="trustpilot-stars"></span>
-                        <span class="trustpilot-stars"></span>
-                        <span class="trustpilot-stars"></span>
-                        <span class="trustpilot-stars"></span>
+                        <p>
+                            Weights<br>
+                            Treadmills<br>
+                            Rowers
+                        </p>
+                        <a href="gym.html">
+                        see more...
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Main content section of the page-->
-        <section class="services container-fluid">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h3>Tailored fitness programs that match your fitness goals</h3>
-                    <hr class="content-divider">
-                    <div class="row">
-                        <div class="col-12 col-xl-4 general-content">
-                            <i class="fas fa-user-friends"></i>
-                            <p>Benefit from the training and experiences from our knowledgeable trainers and
-                                nutritionists.
-                            </p>
-                            <a href="about.html">
-                                see more...
-                            </a>
-                        </div>
-                        <div class="col-12 col-xl-4 general-content">
-                            <i class="fas fa-users"></i>
-                            <p>Join classes and exercise with other gym members. Enjoy the healthy atmosphere at
-                                TightCore.
-                            </p>
-                            <a href="classes.html">
-                                see more...
-                            </a>
-                        </div>
-                        <div class="col-12 col-xl-4 general-content">
-                            <i class="fas fa-dumbbell"></i>
-                            <p>Our gym is modern and stocked with equipment for cardio, HIIT, training, weightlifting,
-                                and
-                                relaxation.</p>
-                            <a href="gym.html">
-                                see more...
-                            </a>
-                        </div>
+            <div class="col-12 col-xl-6" id="half-width-image-right">
+                <div class="overlay">
+                    <div class="cover-text facilities">
+                        <h1>
+                            Gym Classes
+                        </h1>
+                        <h3>
+                            Classes provide a great way to get fit. Try yoga and pilates, or circuits and aerobics. 
+                            We offer a range of different classes from morning to evening.
+                        </h3>
+                        <a href="classes.html">
+                        see more...
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Image section: 2 images side-by-side on desktop-->
-        <section class="container-fluid facilities-outer">
-            <div class="row">
-                <div class="col-12 col-xl-6" id="half-width-image-left">
-                    <div class="overlay">
-                        <div class="cover-text facilities">
-                            <h1>
-                                Gym Facilities
-                            </h1>
-                            <h3>
-                                Whether you are trying to build muscle or trying to improve your endurance,
-                                take advantage of our:
-                            </h3>
-                            <p>
-                                Weights<br>
-                                Treadmills<br>
-                                Rowers
-                            </p>
-                            <a href="gym.html">
-                                see more...
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-xl-6" id="half-width-image-right">
-                    <div class="overlay">
-                        <div class="cover-text facilities">
-                            <h1>
-                                Gym Classes
-                            </h1>
-                            <h3>
-                                Classes provide a great way to get fit. Try yoga and pilates, or circuits and aerobics.
-                                We offer a range of different classes from morning to evening.
-                            </h3>
-                            <a href="classes.html">
-                                see more...
-                            </a>
-                        </div>
+        </div>
+    </section>
+    <!-- added a section for users to sign-up for membership and benefits-->
+    <section class="services container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Health and Wellness</h3>
+                <hr class="content-divider">
+                <div class="row">
+                    <div class="col-12 general-content">
+                        <i class="fas fa-user-friends"></i>
+                        <p>Pick up your TightCore Gym membership today. Enjoy discounted prices all year round. 
+                            Membership cards can be used for:
+                        </p>
+                        <p>
+                            Gym Sessions<br>
+                            Gym Products<br>
+                            Gym Classes<br>
+                        </p>
+                        <button class="btn btn-success home-buttons" onclick="window.location.href='https://athajuong.github.io/milestone-project-1/contact.html'" type="submit">
+                        Join Now!
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- added a section for users to sign-up for membership and benefits-->
-        <section class="services container-fluid">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h3>Health and Wellness</h3>
-                    <hr class="content-divider">
-                    <div class="row">
+        </div>
+    </section>
+    <!-- footer content -->
+    <footer id="footer">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>TightCore Gym</h3>
+                <h4>Health and fitness operating in Smith Hotels</h4>
+                <hr class="content-divider-dull-grey">
+                <div class="row">
+                    <div class="col-12 general-content">
+                        <h5>Address:</h5>
+                        <p>Groody Park<br>
+                            Rhebogue Meadows<br>
+                            Co. Limerick
+                        </p>
                         <div class="col-12 general-content">
-                            <i class="fas fa-user-friends"></i>
-                            <p>Pick up your TightCore Gym membership today. Enjoy discounted prices all year round.
-                                Membership cards can be used for:
-                            </p>
                             <p>
-                                Gym Sessions<br>
-                                Gym Products<br>
-                                Gym Classes<br>
+                                <a href="index.html">Back to top</a>
                             </p>
-                            <button class="btn btn-success home-buttons"
-                                onclick="window.location.href='https://athajuong.github.io/milestone-project-1/contact.html'"
-                                type="submit">
-                                Join Now!
-                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- footer content -->
-        <footer id="footer">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h3>TightCore Gym</h3>
-                    <h4>Health and fitness operating in Smith Hotels</h4>
-                    <hr class="content-divider-dull-grey">
-                    <div class="row">
-                        <div class="col-12 general-content">
-                            <h5>Address:</h5>
-                            <p>Groody Park<br>
-                                Rhebogue Meadows<br>
-                                Co. Limerick
-                            </p>
-                            <div class="col-12 general-content">
-                                <p>
-                                    <a href="index.html">Back to top</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- users can easily access company social channels-->
-            <div class="text-center">
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div class="text-center">
-                <p>Copyright© 2021 TightCore Gym</p>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-        </script>
+        </div>
+        <!-- users can easily access company social channels-->
+        <div class="text-center">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="text-center">
+            <p>Copyright© 2021 TightCore Gym</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
-
 </html>
