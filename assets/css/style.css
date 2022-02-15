@@ -13,7 +13,7 @@ body {
 body {
   font-family: "Noto Sans KR", sans-serif;
   background-color: #252525;
-  color: #fafafa;
+  color: #ad1414;
 }
 
 .container-fluid {
@@ -38,19 +38,19 @@ body {
 
 .content-divider-dull-grey {
   width: 100px;
-  border: 2px solid #fafafa;
+  border: 2px solid #a01515;
 }
 
 
 /* background colours */
 
 .nav-menu {
-  background-color: #f9f9f9;
+  background-color: #fafafa;
 }
 
 footer {
-  background-color: #555;
-  color: #FFFFFF;
+  background-color: #252525;
+  color: #fafafa;
 }
 
 
@@ -58,7 +58,7 @@ footer {
 
 .nav-menu {
   width: 100%;
-  color: #A4A7A9;
+  color: #fafafa;
   position: relative;
 }
 
@@ -71,11 +71,11 @@ footer {
 }
 
 .navbar-toggler-icon:hover {
-  border-color: #28a745;
+  border-color: #eb170f;
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
-  color: #76C61A;
+  color: #e61111;
 }
 
 .menu-item-margin {
@@ -93,16 +93,16 @@ footer {
   margin-right: 0;
 }
 
-.logo-style a {
+.home-underline a {
   text-decoration: none;
 }
 
-#logo-grey {
-  color: #A4A7A9;
+#welcome-home {
+  color: #fafafa;
 }
 
-#logo-green {
-  color: #76C61A;
+#contact-us {
+  color: #fafafa;
 }
 
 
