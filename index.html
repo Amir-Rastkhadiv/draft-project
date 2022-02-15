@@ -1,317 +1,184 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A website for a fictional gym based in Limerick, Ireland.">
-    <meta name="author" content="Athiei Ajuong">
-    <!--favicon was created with Photoshop and converted here: https://favicon.io/favicon-converter/-->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/30c3e1568f.js" crossorigin="anonymous"></script>   
-    
-    <title>Fun Gym</title>
-    <!------------------------------------------ /* Styiling the code */ --------------------------------------------->
-
-    <svg>
-        <foreignObject width="100%" height="100%">
-            <style>
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                }
-
-                html {
-                    background-color: white;
-                    height: 100%;
-                    cursor: default;
-                }
-
-                body {
-                    font-family: "Roboto", sans-serif;
-                    /* Default font */
-                    width: 100%;
-                    height: 100%;
-                    text-align: center;
-                    display: table;
-                    opacity: 1;
-                    animation: fadein 3s forwards;
-                    overflow: scroll;
-                    overflow-x: hidden;
-                }
-
-                .pleased {
-                    position: relative;
-                    max-width: 100%;
-                    margin-bottom: 100px;
-                    text-align: center;
-                }
-
-                .warning {
-                    font-style: italic;
-                    font-size: 35px;
-                    text-transform: uppercase;
-                    padding-bottom: 20px;
-                    letter-spacing: 4px;
-                    font-weight: 600;
-                    z-index: 2;
-                    display: contents;
-                    display: inline-block;
-                    color: crimson;
-                    margin-bottom: 15px;
-                    margin-top: -500px;
-                }
-
-                .message {
-                    height: 120px;
-                    background-color: #0a0debf3;
-                    overflow: hidden;
-                    color: #fff;
-                    position: relative;
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                    font-size: 16px;
-                    font-weight: 400;
-                    align-content: center;
-                    left: 12px;
-                    text-align: center;
-                }
-
-                .message {
-                    max-width: 50%;
-                    margin-bottom: -180px;
-                    margin-top: -10px;
-                    font-weight: 600;
-                    text-align: left;
-                    transform: translateX(5%);
-                    animation: moving 15s linear infinite;
-                    z-index: -2;
-                }
-
-                span {
-                    text-transform: lowercase;
-                }
-
-                @keyframes moving {
-                    0% {
-                        transform: translateX(100%);
-                    }
-
-                    100% {
-                        transform: translateX(-100%);
-                    }
-                }
-
-                h2 {
-                    font-weight: 300;
-                    margin-bottom: 10px;
-                }
-
-                img {
-                    width: 20%;
-                    /* Image width */
-                    border: 10;
-                    /* For IE */
-                    /* Aspect ratio of image, gives initial dimension to prevent text moving down once image is loaded */
-                    /* When changing logo, change this also */
-                    aspect-ratio: 100 / 50;
-                }
-
-                #main {
-                    vertical-align: middle;
-                    display: table-cell;
-                    margin-top: 0%;
-                    margin-bottom: -100px;
-                    margin-top: 10px;
-                }
-
-                /* Progress bar */
-                #progress {
-                    width: 45%;
-                    /* Bar width */
-                    margin: 0 auto;
-                    border-radius: 10px;
-                    /* Roundness */
-                    background-color: #a8a8a8;
-                    /* Background colour */
-                    padding: 7px 5px;
-                    /* border: 5px solid #a8a8a8; Border */
-                }
-
-                #fill {
-                    padding: 2px 0;
-                    background-color: #00b98b;
-                    /* Fill colour */
-                    width: 84%;
-                    /* Bar percentage, change text below also */
-                    border-radius: 25px;
-                    /* Roundness */
-                    animation: proanimate 2s;
-                }
-
-                #barpercent h3 {
-                    color: white;
-                    /* Bar percentage text colour */
-                    margin: 0;
-                    padding: 0;
-                    opacity: 1;
-                    animation: fadein 3s forwards;
-                }
-
-                /* Fades in animation */
-                @keyframes fadein {
-                    from {
-                        opacity: 0;
-                    }
-                }
-
-                /* Animates bar on page load */
-                @keyframes proanimate {
-                    from {
-                        width: 0%;
-                    }
-                }
-
-                @media only screen and (max-width: 768px) {
-
-                    body {
-                        width: 100%;
-                    }
-
-                    .pleased {
-                        max-width: 80%;
-                    }
-
-                    .warning {
-                        max-width: 70%;
-                        font-size: 80%;
-                    }
-
-                    .message {
-                        max-width: 100%;
-                        height: 10px;
-                        font-size: 3px;
-                        font-weight: 10%;
-                        letter-spacing: 0;
-                    }
-                }
-
-                @media screen and (max-width: 900px) {
-                    body {
-                        width: 100%;
-                    }
-
-                    .pleased {
-                        max-width: 80%;
-                    }
-
-                    .warning {
-                        max-width: 70%;
-                    }
-
-                    .message {
-                        width: 65%;
-                        height: 130%;
-                        font-size: 14px;
-                    }
-                }
-            </style>
-        </foreignObject>
-    </svg>
-</head>
-
-<!----------------------------  /* End of styling! */  --------------------------------------------------------------->
-
-<body>
-     <!-- Header/navbars go here --> 
-     <nav class="navbar nav-menu navbar-light navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand home-" id="logo-hover" href="#">
-            <span id="welcome-home">Home</span>
-            </a>
-            <a class="navbar-brand logo-style" id="logo-hover" href="#">
-                <span id="contact-us">Contact Us</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon menu-hover"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto text-center" id="menu-hover">
-                    <li class="nav-item mr-2">
-                        <a class="nav-link menu-item" href="#">Fun Gym</a>
-                    </li>
-                    <li>
-                        <button class="btn btn-success home-buttons nav-button" onclick="window.location.href='#'" type="submit">
-                        Login<i class="fas fa-user-plus"></i>
-                        </button>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link menu-item" href="#"> Menu</a>
-                    </li>
-                </ul>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A website for a fictional gym based in Limerick, Ireland.">
+        <meta name="author" content="Athiei Ajuong">
+        <!--favicon was created with Photoshop and converted here: https://favicon.io/favicon-converter/-->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://kit.fontawesome.com/30c3e1568f.js" crossorigin="anonymous"></script>
+        <title>Fun Gym</title>
+    </head>
+    <body>
+        <!-- Header/navbars go here --> 
+        <nav class="navbar nav-menu navbar-light navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand home-" id="logo-hover" href="#">
+                <span id="welcome-home">Home</span>
+                </a>
+                <a class="navbar-brand logo-style" id="logo-hover" href="#">
+                    <span id="contact-us">Contact Us</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon menu-hover"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto text-center" id="menu-hover">
+                        <li class="nav-item mr-2">
+                            <a class="nav-link menu-item" href="#">Fun Gym</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-success home-buttons nav-button" onclick="window.location.href='#'" type="submit">
+                            Login<i class="fas fa-user-plus"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link menu-item" href="#"> Menu</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <section>
-        <div id="announcement" class="pleased">
-            <div class="warning"> Opening announcement</div>
-            <div class="message">
-                <p>
-                    Happy to inform that Fun Gym's website will be up next week.
-                    Got a question? 
-                    <p>Email:</p>
-                    <p><span>comeback.fungym@gmail.com</span></p>
-                </p>
-            </div>
-        </div>
-
-        <div id="main">
-            <img src="assets/img/temporary-logo.png"
-                alt="Fun Gym exclusive logo with heart, victory vibes and cheerful, funny smile in black and red." />
-            <h1><strong>Fun Gym</strong></h1>
-            <h2>New website under construction.</h2>
-            <p> Thank you for being patient.</p>
-            <div id="progress">
-                <div id="fill">
-                    <div id="barpercent">
-                        <h3>84%</h3>
+        </nav>
+        <!-- ===== Main section of the page ====== -->
+        <section class="container-fluid" id="hero-outer">
+            <!-- Add hero image for home page-->
+            <div id="hero-image">
+                <div class="overlay">
+                    <div class="cover-text" id="hero">
+                        <h1>
+                            Join Now
+                        </h1>
+                        <h3>
+                            Get ready for the summer with our expert trainers and nutritionists!
+                        </h3>
+                        <button class="btn btn-success home-buttons nav-button" onclick="window.location.href='https://athajuong.github.io/milestone-project-1/contact.html'" type="submit">Book a session!</button>
+                        <!-- These stars are positioned center on small and above screens-->
+                        <div class="d-none d-sm-block" id="stars-small">
+                            <span class="trustpilot-stars"></span>
+                            <span class="trustpilot-stars"></span>
+                            <span class="trustpilot-stars"></span>
+                            <span class="trustpilot-stars"></span>
+                        </div>
+                    </div>
+                    <!-- these stars are positioned in the bottom corner on mobile-->
+                    <div class="d-block d-sm-none review-stars">
+                        <span class="trustpilot-stars"></span>
+                        <span class="trustpilot-stars"></span>
+                        <span class="trustpilot-stars"></span>
+                        <span class="trustpilot-stars"></span>
                     </div>
                 </div>
             </div>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400" rel="stylesheet" />
-        </div>
-    </section>
-</body>
+        </section>
+        <!--Main content section of the page-->
+        <section class="services container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>Tailored fitness programs that match your fitness goals</h3>
+                    <hr class="content-divider">
+                    <div class="row">
+                        <div class="col-12 col-xl-4 general-content">
+                            <i class="fas fa-user-friends"></i>
+                            <p>Benefit from the training and experiences from our knowledgeable trainers and nutritionists.</p>
+                            <a href="about.html">
+                            see more...
+                            </a>
+                        </div>
+                        <div class="col-12 col-xl-4 general-content">
+                            <i class="fas fa-users"></i>
+                            <p>Join classes  Enjoy the healthy atmosphere at TightCore.</p>
+                            <a href="classes.html">
+                            see more...
+                            </a>
+                        </div>
+                        <div class="col-12 col-xl-4 general-content">
+                            <i class="fas fa-dumbbell"></i>
+                            <p>Our gym is cutting edge and stocked with equipment for cardio, HIIT, training, weightlifting, and relaxation.</p>
+                            <a href="gym.html">
+                            see more...
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image section: 2 images side-by-side on desktop-->
+        <section class="container-fluid facilities-outer">
+            <div class="row">
+                <div class="col-12 col-xl-6" id="half-width-image-left">
+                    <div class="overlay">
+                        <div class="cover-text facilities">
+                            <h1>
+                                Gym Facilities
+                            </h1>
+                            <h3>
+                                build your bydy here :
+                            </h3>
+                            <p>
+                                Weights<br>
+                                <br>
+                                
+                            </p>
+                            <a href="gym.html">
+                            see more...
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6" id="half-width-image-right">
+                    <div class="overlay">
+                        <div class="cover-text facilities">
+                            <h1>
+                                Gym sessions
+                            </h1>
+                            <h3>
+                                mvnjfbvjjfdnbblnkm .dn gb gkx .,n, lgfmnlmglm
+                            </h3>
+                            <a href="classes.html">
+                            see more...
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- added a section for users to sign-up for membership and benefits-->
+        <section class="services container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>Health and Wellness</h3>
+                    <hr class="content-divider">
+                    <div class="row">
+                        <div class="col-12 general-content">
+                            <i class="fas fa-user-friends"></i>
+                            <p>Pick up your Fun Gym membership today. Enjoy discounted prices all year round. 
+                                
+                            </p>
+                            <p>
+                                Gym Sessions<br>
+                                Gym Products<br>
+                                Gym Classes<br>
+                            </p>
+                            <button class="btn btn-success home-buttons" onclick="window.location.href='https://athajuong.github.io/milestone-project-1/contact.html'" type="submit">
+                            Join Now!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer content -->
+        <footer id="footer"></footer>
 
-<hr>
-
-<footer>
-    <h2> Follow us for updates here:</h4>
-
-        <h3><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></h3>
-        <h3><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></h3>
-        <h3><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></h3>
-        <h3><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></h3>
-
-     <h4> &copy; 2022 Fun Gym. All rights reserved. Thanks for visiting our website.</h4>
-
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+           
+            <!-- users can easily access company social channels-->
+            
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
 </html>
