@@ -45,7 +45,7 @@ body {
 /* background colours */
 
 .nav-menu {
-  background-color: #fafafa;
+  background-color: #252525;
 }
 
 footer {
@@ -58,7 +58,7 @@ footer {
 
 .nav-menu {
   width: 100%;
-  color: #fafafa;
+  color: #252525;
   position: relative;
 }
 
@@ -83,7 +83,7 @@ footer {
 }
 
 #menu-hover :hover {
-  color: #76C61A;
+  color: #ee1414;
 }
 
 .logo-style {
