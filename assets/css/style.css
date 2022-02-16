@@ -66,7 +66,7 @@ h1 {
 
 #icon-bar a {
     text-decoration: none;
-    color: white;
+    color: #fafafa;
 }
 
 #icon-bar a:hover {
@@ -87,7 +87,7 @@ h1 {
 }
 
 #hero-image {
-    height: 800px;
+    height: 600px;
     width: 100%;
     background: url("../img/fungym-hero.png") no-repeat center center;
 
@@ -112,7 +112,7 @@ h1 {
 
 #cover-text,
 #cover-text h2 {
-    color: #ffffff;
+    color: #fafafa;
 }
 
 #cover-text {
@@ -127,11 +127,35 @@ h1 {
     padding-top: 40px;
     padding-left: 10px;
 
-    background-color: rgba(241, 109, 107, .7);
+    background-color: #73303042;
 
     bottom: 30px;
     right: 150px;
 
     position: absolute;
 
+}
+
+/* Creates the button  on text image fot join now */
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #333333b5;
+    color: #ffaeae;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #e10a0a;
+
+    color: #333333b5;
 }
