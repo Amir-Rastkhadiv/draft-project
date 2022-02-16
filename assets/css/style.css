@@ -117,21 +117,16 @@ h1 {
 
 #cover-text {
     font-size: 130%;
-    font-family: Oswald;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-
-    width: 300px;
-    height: 200px;
-
+    width: 600px;
+    height: 170px;
     padding-top: 40px;
     padding-left: 10px;
-
-    background-color: #73303042;
-
-    bottom: 30px;
-    right: 150px;
-
+    background-color: #dd7474a6;
+    right: 200px;
+    top: 60%;
     position: absolute;
 
 }
@@ -140,22 +135,23 @@ h1 {
 
 .btn {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #333333b5;
+    transform: translate(-50%, -10%);
+    -ms-transform: translate(-50%, -40%);
+    background-color: #333333;
     color: #e10a0a;
-    font-size: 16px;
-    padding: 16px 30px;
+    font-size: 65%;
+    text-transform: uppercase;
+    padding: 10px 30px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50px;
     text-align: center;
 }
 
 .btn:hover {
     background-color: #e10a0a;
 
-    color: #333333b5;
+    color: #fafafa;
 }
