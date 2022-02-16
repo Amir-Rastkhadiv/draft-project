@@ -45,18 +45,6 @@ h1 {
 
 }
 
-.logo {
-    background: url("../img/fungym-brand-logo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 60px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-}
-
-
 /* navigation links */
 
 #icon-bar {
@@ -91,19 +79,21 @@ h1 {
 
 /* Hero image and cover text */
 
-#hero-outer{
-    height:600px;
+#hero-outer {
+    height: 600px;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
-#hero-image{
-    height:500px;
+#hero-image {
+    height: 800px;
     width: 100%;
-    background: no-repeat center center;
+    background: url("../img/fungym-hero.png") no-repeat center center;
+
 
     /* Animates zoom effect on loading the page */
+
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -111,15 +101,17 @@ h1 {
 
 /* Creates the level of zoom for hero image */
 @keyframes hero-zoom {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.1);
     }
 }
 
-#cover-text, #cover-text h2 {
+#cover-text,
+#cover-text h2 {
     color: #ffffff;
 }
 
