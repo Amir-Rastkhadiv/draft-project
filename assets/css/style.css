@@ -162,18 +162,53 @@ footer {
     height: 150px;
 }
 
-.social-media-networks {
+.social-media-links {
     text-align: center;
 
 }
 
-.social-media-networks li {
+.social-media-links li {
     display: inline;
 }
 
-.social-media-networks i {
+.social-media-links i {
     font-size: 160%;
     margin: 2%;
     padding: 5%;
     color: #fafafa;
+}
+
+.social-media-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+
+}
+
+.social-media-links li a i:hover {
+    background: #e10a0a;
+
+}
+
+.copy-rights {
+
+    margin-left: 30px;
+    color: #fafafa;
+}
+
+#fungym-corights-col {
+
+    color: #e10a0a;
+
+
 }
