@@ -313,41 +313,44 @@ hr {
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 120%;
+    text-align: justify;
+
 }
 
 .right-about-heading {
-    width: 60%;
+    width: 75%;
     float: left;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 120%;
 }
 
 .right-about-heading p {
-    text-align: right;
+    text-align: justify;
 }
 
 .right-about-heading h2 {
-    text-align: right;
+    text-align: justify;
 }
 
 
 .center-about-heading {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 300px;
     padding: 20px;
     line-height: 20px;
     letter-spacing: 1px;
     clear: both;
     margin: 0 auto;
     position: absolute;
-    top: 60%;
-    left: 40%;
+    top: 55%;
+    left: 35%;
     font-size: 120%;
+    text-align: justify;
 }
 
 
