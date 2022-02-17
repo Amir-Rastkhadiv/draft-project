@@ -70,7 +70,7 @@ h1 {
 }
 
 #icon-bar a:hover {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #e10a0a;
 }
 
 .active {
@@ -150,11 +150,13 @@ h1 {
     text-align: center;
 }
 
+
 .btn:hover {
     background-color: #e10a0a;
 
     color: #fafafa;
 }
+
 
 /* Footer */
 
@@ -272,6 +274,8 @@ h5 {
 
 #club-ethos {
     height: 600px;
+    position: relative;
+
 }
 
 #left-about {
@@ -321,6 +325,28 @@ hr {
     text-align: right;
 }
 
+
+.center-about-heading {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    line-height: 20px;
+    clear: both;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+
+
+
+
+
+
+
+
+
 /* fun gym high-five image for its five extraordinary exclusive missions */
 
 #welcome {
@@ -332,11 +358,11 @@ hr {
 #circle-container {
     width: 300px;
     height: 300px;
-    padding: 30px;
-    border-style: solid;
-    border-color: #cccccc;
+    padding: 20px;
+    border-style: double;
+    border-color: #252525;
     border-width: 1px;
-    border-radius: 50%;
+    border-radius: 500%;
     margin: 0 auto;
 }
 
@@ -345,6 +371,22 @@ hr {
     height: 100%;
     border-radius: 50%;
 }
+
+/*  links decoration for its five extraordinary exclusive missions */
+
+#five-topic-click {
+
+    text-decoration: none;
+    color: #e10a0a;
+}
+
+#five-topic-click a:hover {
+    border-bottom: 1px solid #fafafa;
+}
+
+
+
+
 
 /* Event times */
 
