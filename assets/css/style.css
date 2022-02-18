@@ -304,19 +304,22 @@ hr {
 
 /* Event times */
 
-#times {
-    background-image: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png");
+#part-1 {
+    background-image: url("../img/fungym-part-3.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+    background-size: 25%;
+    background-position: 53%;
+    width: 90%;
     overflow: hidden;
+    padding-left: 30px;
+    margin-left: 30px;
+
 }
 
-#times div {
+#part-1 div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
-    width: 20%;
+    width: 50%;
     height: 300px;
     float: left;
     padding: 30px 0 0 10px;
@@ -325,7 +328,7 @@ hr {
     box-sizing: border-box;
 }
 
-#times h2 {
+#part-1 h2 {
     color: #fafafa;
 }
 
