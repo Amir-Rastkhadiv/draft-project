@@ -302,7 +302,7 @@ hr {
 }
 
 
-/* Event times */
+/* Three info parts */
 
 #part-1 {
     background-image: url("../img/fungym-part-3.png");
@@ -328,7 +328,33 @@ hr {
     box-sizing: border-box;
 }
 
-#part-1 h2 {
+#part-2 h2 {
+    color: #fafafa;
+}
+
+#part-2 {
+    background-image: url("../img/fun-gym-part-2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#part-2 div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    width: 20%;
+    height: 300px;
+    float: left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+#part-2 h2 {
     color: #fafafa;
 }
 
